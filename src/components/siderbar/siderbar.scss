@@ -1,0 +1,80 @@
+// Define colors for light and dark themes
+$light-bg-color: #ffffff;
+$light-text-color: #333333;
+$dark-bg-color: #112123;
+$dark-text-color: #ffffff;
+$primary-color: #209ea6;
+$button-bg-color: #209ea6;
+
+// Base styles for the sidebar
+.sider-wrapper {
+  position: relative;
+  background-color: $light-bg-color;
+  color: $light-text-color;
+
+  &__menu-item {
+    font-size: 14px;
+  }
+
+  .logout {
+    z-index: 5;
+    position: fixed;
+    top: 545px;
+    left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    button {
+      color: $light-text-color;
+      width: 150px;
+      background: $button-bg-color;
+    }
+  }
+
+  // Dark mode styles
+  &.dark {
+    background-color: $dark-bg-color;
+    color: $dark-text-color;
+
+    .ant-menu {
+      background-color: $dark-bg-color;
+      color: $dark-text-color;
+
+      .ant-menu-item,
+      .ant-menu-submenu-title {
+        color: $dark-text-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      .ant-menu-item-selected {
+        background-color: $primary-color;
+        color: $dark-text-color;
+      }
+    }
+
+    .logout {
+      button {
+        color: $dark-text-color;
+        background: $button-bg-color;
+      }
+    }
+  }
+}
+
+// Responsive design adjustments (if any)
+@media (max-width: 600px) {
+  .sider-wrapper {
+    .logout {
+      top: 500px; // Adjust as needed
+    }
+  }
+}
+
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light.sider-wrapper__menu-item.css-dev-only-do-not-override-1kuana8 {
+  background: transparent;
+}

@@ -1,0 +1,38 @@
+.help-container {
+    background-color: white;
+    min-height: 74vh;
+    .help-content {
+        padding: 30px;
+        .help-title {
+            color: #209ea6;
+            // text-align: center;
+            font-family: "Work Sans";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.64px;
+            margin-bottom: 15px;
+        }
+
+        .user-manual {
+            .page {
+                margin-bottom: 30px;
+                .title-page {
+                    // color: #209ea6;
+                    // text-align: center;
+                    font-family: "Work Sans";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: -0.64px;
+                    margin-bottom: 15px;
+                }
+                .content-page {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}

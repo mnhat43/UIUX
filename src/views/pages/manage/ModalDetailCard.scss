@@ -1,0 +1,53 @@
+.modalDetail-content {
+    height: 80vh;
+    display: flex;
+    margin-top: -20px;
+    // width: 100%;
+    &__left {
+        width: 50%;
+        border-right: 1px solid #ccc;
+        padding-top: 10px;
+    }
+    &__right {
+        width: 50%;
+        padding-top: 10px;
+        .modalDetail-progress {
+            border-bottom: 1px solid #ccc;
+            // padding-left: -30px;
+            padding-left: 20px;
+
+            .title {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .list-task {
+                .task-item {
+                    p {
+                        font-size: 15px;
+                        margin: 5px 0;
+                    }
+                    width: 80%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .modalDetail-cmt {
+            padding-left: 20px;
+            margin-top: 10px;
+            .title {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.ant-progress-bg {
+    height: 20px !important;
+}
+
+.ant-progress.ant-progress-status-active.ant-progress-line.ant-progress-show-info.ant-progress-default.css-dev-only-do-not-override-1kuana8 {
+    height: 30px !important ;
+}

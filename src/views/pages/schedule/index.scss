@@ -1,0 +1,22 @@
+.schedule-container {
+    background-color: white;
+    padding: 30px;
+
+    .schedule-title {
+        color: #209ea6;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.64px;
+        margin-bottom: 15px;
+    }
+
+    .schedule-content {
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
