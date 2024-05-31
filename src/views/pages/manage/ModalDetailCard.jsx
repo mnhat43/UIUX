@@ -150,13 +150,13 @@ const ModalDetailCard = (props) => {
                             <Button type="primary" htmlType="submit"
                                 style={{
                                     marginRight: "10px", background: "#209EA6",
-                                    position: "absolute", top: 20, right: -320
+                                    position: "absolute", top: 50, right: -320
                                 }}
                             >
                                 Lưu
                             </Button>
                             <Button onClick={() => onCancel()}
-                                style={{ position: "absolute", top: 20, right: -370 }}
+                                style={{ position: "absolute", top: 50, right: -370 }}
                             >
                                 Hủy
                             </Button>

@@ -25,7 +25,7 @@ function ResetPassword() {
                 const res = await auth.resetPassword(data);
                 if (res && res.status === 200) {
                     toast.success("Mật khẩu đã đổi thành công!");
-                    navigate('/login');
+                    navigate('/');
                 }
             } catch (error) {
                 console.log("error: ", error);

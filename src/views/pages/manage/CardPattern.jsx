@@ -109,7 +109,8 @@ const CardCPN = (props) => {
         });
     };
 
-    const [colorBadge, setColorBadge] = useState('#1376BE')
+    const [colorBadge, setColorBadge] = useState('#1376BE');
+    const [colorTimeAdd, setColorTimeAdd] = useState('#3FC616');
 
     useEffect(() => {
         switch (dataCard.badge) {
@@ -130,6 +131,20 @@ const CardCPN = (props) => {
                 break;
             default:
                 setColorBadge('#1376BE');
+        }
+
+        switch (dataCard.status) {
+            case "Đang tiến hành":
+                setColorTimeAdd('#3FC616');
+                break;
+            case "Đã hoàn thành":
+                setColorTimeAdd('#f5222d');
+                break;
+            case "Quá hạn":
+                setColorTimeAdd('#faad14');
+                break;
+            default:
+                setColorTimeAdd('#3FC616');
         }
     }, [dataCard])
 
@@ -164,7 +179,7 @@ const CardCPN = (props) => {
                         </div>
                         <div className='footer-card'>
                             <div className='time-create'>
-                                <Tag icon={<FieldTimeOutlined />} color="#3FC616">
+                                <Tag icon={<FieldTimeOutlined />} color={colorTimeAdd}>
                                     {dataCard.dateAdd}
                                 </Tag>
                             </div>

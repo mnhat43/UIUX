@@ -3,14 +3,20 @@ import './setting.scss'
 import { KeyOutlined, GlobalOutlined, BellOutlined, MoonOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import useTheme from 'hooks/useTheme'
+import { useNavigate } from 'react-router-dom';
 
 const Setting = () => {
     const [isOpenPW, setIsOpenPW] = useState(false);
     const { dark, setDark, handleDark } = useTheme();
+    const navigate = useNavigate();
 
     const onFinish = (values) => {
         console.log(values);
         setIsOpenPW(false);
+    }
+
+    const handleLogout = () => {
+        navigate('/');
     }
 
     return (
@@ -134,6 +140,14 @@ const Setting = () => {
                             <Option value="off">Tắt</Option>
                         </Select>
                     </div>
+                </div>
+                <div style={{ textAlign: "center" }}>
+                    <Button
+                        className="btnn"
+                        onClick={() => handleLogout()}
+                    >
+                        Đăng xuất
+                    </Button>
                 </div>
 
             </div>

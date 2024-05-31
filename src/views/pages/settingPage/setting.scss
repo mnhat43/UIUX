@@ -5,6 +5,7 @@
 
     .setting-title {
         color: #209ea6;
+        text-align: center;
         font-family: "Work Sans";
         font-size: 32px;
         font-style: normal;
@@ -20,7 +21,7 @@
         gap: 20px;
 
         .setting-item {
-            background-color: #d9d9d9;
+            background-color: #33bcb7;
             border-radius: 10px;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             padding: 10px 20px;
@@ -37,6 +38,11 @@
                     font-size: 20px;
                 }
             }
+        }
+        button.ant-btn.css-dev-only-do-not-override-1kuana8.ant-btn-default,
+        .ant-select-selector {
+            background: #58d1c9;
+            color: black;
         }
     }
 

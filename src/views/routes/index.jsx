@@ -41,7 +41,7 @@ function AllRoutes() {
           <Route path="/schedule" element={<MainLayout component={Schedule} />} />
           <Route path="/manage-task" element={<MainLayout component={Manage} />} />
           <Route path="/personal-info" element={<MainLayout component={PersonalInfo} />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />

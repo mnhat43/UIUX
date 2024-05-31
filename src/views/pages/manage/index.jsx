@@ -39,7 +39,7 @@ function Manage() {
     let listCardDefault = [
         { id: "1", status: "Đang tiến hành", badge: "Tự học", title: "Học Tiếng Nhật", target: "Từ vựng + Ngữ pháp + Đọc + Nghe", date: "30/05/2024", time: "08:30 AM", doneTask: "2", totalTask: "4", dateAdd: "28 tháng 4" },
         { id: "2", status: "Đã hoàn thành", badge: "Học tập", title: "Báo cáo GR1", target: "Demo + báo cáo", date: "28/04/2024", time: "10:30 AM", doneTask: "3", totalTask: "3", dateAdd: "20 tháng 4" },
-        { id: "3", status: "Đã hoàn thành", badge: "Gia đình", title: "Sinh nhật mẹ", target: "Mua hoa + Quà", date: "01/05/2024", time: "08:30 AM", doneTask: "2", totalTask: "2", dateAdd: "29 tháng 4" },
+        { id: "3", status: "Đã hoàn thành", badge: "Gia đình", title: "Quét dọn nhà cửa", target: "Mua hoa + Quà", date: "01/05/2024", time: "08:30 AM", doneTask: "2", totalTask: "2", dateAdd: "29 tháng 4" },
         { id: "4", status: "Quá hạn", badge: "Sức khỏe", title: "Khám bệnh", target: "Khám tại bệnh viện bạch mai", date: "25/04/2024", time: "08:30 AM", doneTask: "0", totalTask: "1", dateAdd: "23 tháng 4" },
         { id: "5", status: "Đang tiến hành", badge: "Công việc", title: "Thực tập", target: "Thực tập tại công ty A", date: "30/07/2024", time: "08:30 AM", doneTask: "3", totalTask: "10", dateAdd: "1 tháng 5" },
         { id: "6", status: "Đang tiến hành", badge: "Học tập", title: "Báo cáo ITSS", target: "Video demo + Báo cáo", date: "30/05/2024", time: "23:59 PM", doneTask: "3", totalTask: "5", dateAdd: "12 tháng 5" },

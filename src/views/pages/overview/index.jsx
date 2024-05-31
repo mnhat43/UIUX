@@ -15,7 +15,7 @@ import {
     Select,
 } from 'antd';
 import CardCPN from '../manage/CardPattern';
-
+import icon from './chamthan.gif';
 
 export default function Overview() {
     const [chartData, setChartData] = useState({});
@@ -73,15 +73,17 @@ export default function Overview() {
                     <div className='overview-chart'>
                         <Chart
                             width={"90%"}
+                            height={"300px"}
                             type="bar"
                             data={chartData}
-                            options={chartOptions} />
+                        // options={chartOptions} 
+                        />
                     </div>
                 </div>
                 <div className='content-bottom'>
                     <div className='title'>
                         <div>Công việc sắp đến hạn</div>
-                        <img src='https://s3-alpha-sig.figma.com/img/d448/585a/79b222a9e077fc68b0b66c1690d742a6?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EPB-2XIzvnNk5R6dY3TJRWwlJjsN8-4NRvztYWfCFbWNtoAhWscP7XaP8HJfHbRc719MPjue3geGWJ0FfzcnQFFjvjWK~kOdGoxjyXPG1wkmCF2dwQKKf-56fFR6XUE7FMK0UsJTpETolvnX5xOzufSBV8YxesDMJIT48dKyfz9sSO2r5YbYKMh2SQV1V3hMgHNob9S8rKSw0Yf1ldSNn4wb7vf-cfPwYONSeu2B1NXTo2oqXKXwROJQtCcekfLGttd6lOw6lrwbyOGTwVs1PgvOo50y0OT46XzKtyDWJFCYttI40gjph8K4YMplqo6Sv21BL0Ys8sJm67x0ln6XhA__' />
+                        <img src={icon} />
                     </div>
                     <div className='list-card'>
                         <div className='row'>

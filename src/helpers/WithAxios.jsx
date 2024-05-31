@@ -20,7 +20,7 @@ const WithAxios = ({ children }) => {
               setIsLoggedIn(false)
               setAuthData(null)
               setUserData(null)
-              history.push('/login')
+              history.push('/')
               reject(error)
             })
           }
@@ -36,7 +36,7 @@ const WithAxios = ({ children }) => {
               setIsLoggedIn(false)
               setAuthData(null)
               setUserData(null)
-              history.push('/login')
+              history.push('/')
             }
           }
           return Promise.reject(error)

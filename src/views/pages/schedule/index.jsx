@@ -55,15 +55,15 @@ const getListData = (value) => {
             listData = [
                 {
                     type: 'warning',
-                    content: 'Đây là sự kiện cảnh báo.',
+                    content: 'Sắp đến hạn',
                 },
                 {
                     type: 'success',
-                    content: 'Đây là sự kiện thông thường.',
+                    content: 'Còn lâu mới đến hạn',
                 },
                 {
                     type: 'error',
-                    content: 'Đây là sự kiện lỗi.',
+                    content: 'Cần làm gấp',
                 },
             ];
             break;

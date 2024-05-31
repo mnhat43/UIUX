@@ -15,7 +15,6 @@ function Login() {
   const handleSubmit = async (dataUser) => {
     try {
       navigate('/overview');
-      window.location.reload();
     } catch (error) {
       console.log("error: ", error);
       toast.error('Đăng nhập thất bại')

@@ -25,7 +25,7 @@ const SiderRender = (props) => {
   const { dark, setDark, handleDark } = useTheme();
 
   const handleLogout = () => {
-    navigate('/login');
+    navigate('/');
   };
 
 
@@ -71,16 +71,16 @@ const SiderRender = (props) => {
           ))}
         </Menu>
 
-        <span className='logout' onClick={handleLogout} >
-          <Image
+        <div className='logout' onClick={handleLogout} >
+          {/* <Image
             style={{ width: '30px' }}
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/310d0caaf89ccec1abd120a7b94061ba74221f0aecbf4996774d141857d9c90b?apiKey=10b1e221f97543f5b056ca1fc29636cb&"
             alt="Descriptive alt text"
-          />
-          <Button style={{ color: 'white', width: '150px', background: '#209EA6' }}>
+          /> */}
+          <Button style={{ color: dark === "off" ? 'black' : "white", width: '150px', background: dark === "off" ? '#84e2d8' : "#58d1c9", }}>
             Đăng xuất
           </Button>
-        </span>
+        </div>
       </Sider>
     </>
 

@@ -24,7 +24,7 @@ function ForgotPassword() {
     }
 
     const handleToLogin = () => {
-        navigate('/login')
+        navigate('/')
     }
 
     return (
