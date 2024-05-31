@@ -26,42 +26,44 @@ export default function Overview() {
         { id: "3", status: "Đang tiến hành", badge: "Sức khỏe", title: "Khám bệnh", target: "Từ vựng + Ngữ pháp + Đọc + Nghe", date: "22/05/2024", time: "08:30 AM", doneTask: "1", totalTask: "2", dateAdd: "28 tháng 4" },
     ]
 
-    useEffect(() => {
-        const data = {
-            labels: ['Học Tiếng Nhật', 'Báo cáo UIUX', 'Chạy bộ', 'Project ITSS', 'Khóa học Python'],
-            datasets: [
-                {
-                    label: 'KPI',
-                    data: [68, 35, 78, 90, 56, 100],
-                    backgroundColor: [
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(131, 43, 43, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(153, 102, 255, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgb(255, 159, 64)',
-                        'rgb(75, 192, 192)',
-                        'rgb(131, 43, 43)',
-                        'rgb(54, 162, 235)',
-                        'rgb(153, 102, 255)'
-                    ],
-                    borderWidth: 1
-                }
-            ]
-        };
-        const options = {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+    const data = {
+        labels: ['Học Tiếng Nhật', 'Báo cáo UIUX', 'Chạy bộ', 'Project ITSS', 'Khóa học Python'],
+        datasets: [
+            {
+                label: 'KPI',
+                data: [68, 35, 78, 90, 56, 100],
+                backgroundColor: [
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(131, 43, 43, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgb(255, 159, 64)',
+                    'rgb(75, 192, 192)',
+                    'rgb(131, 43, 43)',
+                    'rgb(54, 162, 235)',
+                    'rgb(153, 102, 255)'
+                ],
+                borderWidth: 1
             }
-        };
+        ]
+    };
+    const options = {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    };
 
-        setChartData(data);
-        setChartOptions(options);
-    }, []);
+    // useEffect(() => {
+
+
+    //     setChartData(data);
+    //     setChartOptions(options);
+    // }, []);
 
     return (
         <div className="container">
@@ -72,11 +74,11 @@ export default function Overview() {
                     </div>
                     <div className='overview-chart'>
                         <Chart
-                            width={"90%"}
+                            width={"600px"}
                             height={"300px"}
                             type="bar"
-                            data={chartData}
-                        // options={chartOptions} 
+                            data={data}
+                            options={options}
                         />
                     </div>
                 </div>
