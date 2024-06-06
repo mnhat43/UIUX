@@ -69,6 +69,14 @@ const PersonalInfo = () => {
         style={{
           width: 700,
         }}
+        initialValues={{
+          username: "admin",
+          email: "admin@gmail.com",
+          fullname: "admin",
+          phone: "0987654321",
+          birth: "01/01/2003",
+          role: "student"
+        }}
       >
         <Row gutter={16} style={{ marginBottom: "10px" }}>
           <Col span={12}>

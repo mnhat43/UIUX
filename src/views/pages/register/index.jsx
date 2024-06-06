@@ -35,7 +35,7 @@ function Register() {
   }
 
   const handleToLogin = () => {
-    navigate('/')
+    navigate('/login')
   }
 
   return (

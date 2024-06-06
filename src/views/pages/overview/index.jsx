@@ -74,8 +74,8 @@ export default function Overview() {
                     </div>
                     <div className='overview-chart'>
                         <Chart
-                            width={"600px"}
-                            height={"300px"}
+                            width={"100vw"}
+                            height={"50vh"}
                             type="bar"
                             data={data}
                             options={options}

@@ -77,9 +77,9 @@ const SiderRender = (props) => {
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/310d0caaf89ccec1abd120a7b94061ba74221f0aecbf4996774d141857d9c90b?apiKey=10b1e221f97543f5b056ca1fc29636cb&"
             alt="Descriptive alt text"
           /> */}
-          <Button style={{ color: dark === "off" ? 'black' : "white", width: '150px', background: dark === "off" ? '#84e2d8' : "#58d1c9", }}>
+          {/* <Button style={{ color: dark === "off" ? 'black' : "white", width: '150px', background: dark === "off" ? '#84e2d8' : "#58d1c9", }}>
             Đăng xuất
-          </Button>
+          </Button> */}
         </div>
       </Sider>
     </>

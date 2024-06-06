@@ -95,7 +95,7 @@ function Manage() {
                     </Button>
                 </div>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col' >
                         <div className='title'>
                             Đang tiến hành (3)
                         </div>
@@ -106,7 +106,7 @@ function Manage() {
                                     console.log(item);
                                     if (item.status === 'Đang tiến hành') {
                                         return (
-                                            <div key={index}>
+                                            <div key={index} style={{ textAlign: "center" }}>
                                                 < CardCPN
                                                     dataCard={item}
                                                     removeCard={removeCard}
@@ -120,6 +120,7 @@ function Manage() {
                             }
                         </div>
                     </div>
+                    <hr />
                     <div className='col'>
                         <div className='title'>
                             Đã hoàn thành (2)
@@ -145,6 +146,7 @@ function Manage() {
                             }
                         </div>
                     </div>
+                    <hr />
                     <div className='col'>
                         <div className='title'>
                             Quá hạn (1)
