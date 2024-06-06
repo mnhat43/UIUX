@@ -39,7 +39,10 @@
                 }
             }
         }
-        button.ant-btn.css-dev-only-do-not-override-1kuana8.ant-btn-default,
+        .btnn {
+            background: #58d1c9;
+            color: black;
+        }
         .ant-select-selector {
             background: #58d1c9;
             color: black;
@@ -48,7 +51,7 @@
 
     &.dark {
         background: #112123;
-        button.ant-btn.css-dev-only-do-not-override-1kuana8.ant-btn-default {
+        .btnn {
             background: #146262;
             color: white;
         }

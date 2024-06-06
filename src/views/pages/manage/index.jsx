@@ -103,10 +103,9 @@ function Manage() {
                             {
                                 newList && newList.length > 0 &&
                                 newList.map((item, index) => {
-                                    console.log(item);
                                     if (item.status === 'Đang tiến hành') {
                                         return (
-                                            <div key={index} style={{ textAlign: "center" }}>
+                                            <div key={index} >
                                                 < CardCPN
                                                     dataCard={item}
                                                     removeCard={removeCard}

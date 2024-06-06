@@ -160,7 +160,7 @@ const ModalDetailCard = (props) => {
                                                 from: '#108ee9',
                                                 to: '#87d068',
                                             }}
-                                            style={{ height: "100px" }}
+
                                         />
                                     </Flex>
                                 </div>
@@ -174,7 +174,7 @@ const ModalDetailCard = (props) => {
                                                 from: '#108ee9',
                                                 to: '#87d068',
                                             }}
-                                            style={{ height: "100px" }}
+
                                         />
                                     </Flex>
                                 </div>
@@ -188,7 +188,7 @@ const ModalDetailCard = (props) => {
                                                 from: '#108ee9',
                                                 to: '#87d068',
                                             }}
-                                            style={{ height: "100px" }}
+
                                         />
                                     </Flex>
                                 </div>
@@ -202,7 +202,7 @@ const ModalDetailCard = (props) => {
                                                 from: '#108ee9',
                                                 to: '#87d068',
                                             }}
-                                            style={{ height: "100px" }}
+
                                         />
                                     </Flex>
                                 </div>
