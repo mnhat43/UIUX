@@ -98,6 +98,14 @@ export default function Overview() {
                                     5 tiếng
                                 </div>
                             </div>
+                            <div className='xx'>
+                                <div className='title'>
+                                    Lời nhắc
+                                </div>
+                                <div className='text'>
+                                    Bạn cần nỗ lực hơn để hoàn thành KPI đúng hạn
+                                </div>
+                            </div>
                         </div>
 
                     </div>
