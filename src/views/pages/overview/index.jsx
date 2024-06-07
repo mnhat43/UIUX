@@ -13,6 +13,7 @@ import {
     InputNumber,
     Row,
     Select,
+    Card
 } from 'antd';
 import CardCPN from '../manage/CardPattern';
 import icon from './chamthan.gif';
@@ -70,7 +71,7 @@ export default function Overview() {
             <div className='content'>
                 <div className='content-top'>
                     <div className='title'>
-                        Tổng quan KPI
+                        Tổng quan
                     </div>
                     <div className='overview-chart'>
                         <Chart
@@ -80,6 +81,25 @@ export default function Overview() {
                             data={data}
                             options={options}
                         />
+                        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                            <div className='xx'>
+                                <div className='title'>
+                                    Số ngày sử dụng liên tục
+                                </div>
+                                <div className='text'>
+                                    5 ngày
+                                </div>
+                            </div>
+                            <div className='xx'>
+                                <div className='title'>
+                                    Thời gian sử dụng trong ngày
+                                </div>
+                                <div className='text'>
+                                    5 tiếng
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div className='content-bottom'>

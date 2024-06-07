@@ -22,7 +22,7 @@ const { Header, Footer, Sider, Content } = Layout;
 const headerStyle = {
     // textAlign: 'center',
     // color: '#fff',
-    height: 45,
+    height: 50,
     // paddingInline: 48,
     // lineHeight: '64px',
     backgroundColor: 'white',
