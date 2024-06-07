@@ -25,8 +25,11 @@ const headerStyle = {
     height: 45,
     // paddingInline: 48,
     // lineHeight: '64px',
-    backgroundColor: '#EEEEEE',
+    backgroundColor: 'white',
     width: '100vw',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: "space-between"
 };
 const contentStyle = {
     textAlign: 'center',
@@ -58,10 +61,13 @@ const LandingPage = () => {
     const handleLogin = () => {
         navigate('/login');
     }
+    const handleRegister = () => {
+        navigate('/register');
+    }
     return (
         <div className='landing-page'>
             {/* <Layout style={layoutStyle}> */}
-            <Header style={headerStyle}>
+            <Header style={headerStyle} >
                 <div className="logo">
                     <img
                         loading="lazy"
@@ -73,6 +79,11 @@ const LandingPage = () => {
                     <div className="textLogo2" style={{ color: "black" }}>HI10</div>
                 </div>
 
+                <div className='btn'>
+                    <Button onClick={handleLogin} style={{ marginRight: "10px", backgroundColor: "#009999", color: "white" }}>Đăng nhập</Button>
+                    <Button onClick={handleRegister} style={{ backgroundColor: "#009999", color: "white" }}>Đăng ký</Button>
+                </div>
+
             </Header>
             <Content style={contentStyle} className='content'>
                 <div className='left'>
@@ -82,7 +93,7 @@ const LandingPage = () => {
                     </div>
                     <p>eTracking - Nền tảng quản lí KPIs hiệu quả nhất mà bạn nên tin dùng !</p>
                     <div className='btn' onClick={handleLogin}>
-                        Get started
+                        Bắt đầu ngay
                     </div>
                 </div>
                 <div className='right'>

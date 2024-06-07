@@ -21,9 +21,13 @@ function Login() {
     }
   }
 
+  const handleToHome = () => {
+    navigate('/');
+  }
   const handleToRegister = () => {
     navigate('/register');
   }
+
   const handleToForgotPassword = () => {
     navigate('/forgot-password');
   }
@@ -124,6 +128,9 @@ function Login() {
           <div className="register">
             Chưa có tài khoản?
             <span className='register-link' onClick={() => handleToRegister()}>Đăng ký tại đây</span>
+          </div>
+          <div className="register" style={{ marginTop: "3px" }}>
+            <span className='register-link' onClick={() => handleToHome()}>Quay lại trang chủ</span>
           </div>
         </div>
       </div>
