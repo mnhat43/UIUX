@@ -13,14 +13,19 @@ import {
     DatePicker,
     TimePicker,
     Space,
+    Upload
 } from 'antd';
-import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
+import { MinusCircleOutlined, PlusOutlined, InboxOutlined } from '@ant-design/icons';
 import { toast } from 'react-toastify';
 const { TextArea } = Input;
+const { Dragger } = Upload
+import moment from 'moment';
+const initialValue = moment('12:00:00 01-01-2024', 'HH:mm:ss DD-MM-YYYY');
 
 const ModalAddCard = (props) => {
 
     const { form, formItemLayout, open, onOk, onCancel, listCard, setListCard } = props;
+    const [isDraggerVisible, setIsDraggerVisible] = useState(true);
 
     const convertDate = (dateString) => {
         const date = new Date(dateString);
@@ -39,17 +44,32 @@ const ModalAddCard = (props) => {
         return dateConvert;
     };
 
+    const handleAutoFillName = (value) => {
+        form.setFieldsValue({
+            title: "Học Tiếng Anh",
+            target: "Học 3000 từ trong 1 tháng",
+            status: "Đang tiến hành",
+            badge: "Tự học",
+            dealine: initialValue,
+            remind: "remind_2",
+            description: "Học 100 từ 1 ngày"
+            // 'item-description': "Học 100 từ 1 ngày"
+        })
+        setIsDraggerVisible(false)
+    }
+
     const onFinish = (values) => {
+        console.log(values);
         const dateNow = new Date();
         const data = {
-            status: values.status,
-            badge: values.badge,
-            title: values.title,
-            target: values.target,
-            date: convertDate(values.dealine.$d).date,
-            time: convertDate(values.dealine.$d).time,
-            totalTask: "4",
-            doneTask: "2",
+            status: "Đang tiến hành",
+            badge: "Tự học",
+            title: "Học Tiếng anh",
+            target: "Học 3000 từ trong 1 tháng",
+            date: '30/06/2024',
+            time: '23:59 PM',
+            totalTask: "1",
+            doneTask: "0",
             dateAdd: `${dateNow.getDate()} tháng ${dateNow.getMonth() + 1}`
         }
         listCard.push(data);
@@ -93,7 +113,7 @@ const ModalAddCard = (props) => {
                 >
                     <Input.TextArea showCount maxLength={100} />
                 </Form.Item>
-                <Form.Item
+                {/* <Form.Item
                     name="status"
                     label="Trạng thái"
                 // rules={[{ required: true, message: 'Please select service!' }]}
@@ -104,7 +124,7 @@ const ModalAddCard = (props) => {
                         <Option value="Đã hoàn thành">Đã hoàn thành</Option>
                         <Option value="Quá hạn">Quá hạn</Option>
                     </Select>
-                </Form.Item>
+                </Form.Item> */}
                 <Form.Item
                     name="badge"
                     label="Loại thẻ"
@@ -181,6 +201,37 @@ const ModalAddCard = (props) => {
                             </>
                         )}
                     </Form.List>
+
+                </Form.Item>
+
+                <Form.Item
+                    name="file"
+                    label="Thêm file"
+                >
+
+                    <Dragger
+                        onChange={handleAutoFillName}
+                        beforeUpload={() => {
+                            return false
+                        }}
+                    >
+                        {
+                            isDraggerVisible ?
+                                <>
+                                    <p className="ant-upload-drag-icon">
+                                        <InboxOutlined />
+                                    </p>
+                                    <p className="ant-upload-text">
+                                        Nhấn hoặc kéo thả file
+                                    </p>
+                                    <p className="ant-upload-hint">
+                                        Chỉ hỗ trợ tải 1 file duy nhất
+                                    </p>
+                                </>
+                                :
+                                null
+                        }
+                    </Dragger>
 
                 </Form.Item>
 
