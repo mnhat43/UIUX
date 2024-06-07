@@ -34,6 +34,7 @@ const ModalDetailCard = (props) => {
     const { form, formItemLayout, open, onOk, onCancel } = props;
 
     const onFinish = (values) => {
+        console.log(123);
         console.log(values);
         toast.success('Lưu thay đổi thành công!')
         onOk();
@@ -86,10 +87,8 @@ const ModalDetailCard = (props) => {
                                 </Select>
                             </Form.Item>
                             <Form.Item
-
                                 name="type"
                                 label={<p style={{ fontSize: "15px", fontWeight: "bold" }}>Loại thẻ</p>}
-                            // rules={[{ required: true, message: 'Please select service!' }]}
                             >
                                 <Select
                                     placeholder="Lựa chọn loại thẻ"
@@ -225,7 +224,7 @@ const ModalDetailCard = (props) => {
                     </div>
                 </div>
                 <div style={{ display: 'flex', justifyContent: "flex-end", gap: "10px" }}>
-                    <Button type="primary" htmlType="submit"
+                    <Button type="primary" onClick={onOk}
                         style={{ background: "#209EA6" }}
                     >
                         Lưu
